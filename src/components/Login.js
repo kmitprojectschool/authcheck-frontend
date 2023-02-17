@@ -49,7 +49,7 @@ const Login = () => {
         <div>
             <h1> Login here </h1>
             <div className="mb-3 row">
-            <label htmlFor="exampleFormControlInput1" className="col-sm-2 col-form-label">email</label>
+            <label htmlFor="exampleFormControlInput1" className="col-sm-2 col-form-label">username</label>
             <div className="col-sm-8">
     <input type="text" onChange={(e) => {setUsername(e.target.value)}}  className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
 </div>
