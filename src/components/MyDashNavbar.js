@@ -24,6 +24,9 @@ const MyDashNavbar = () => {
           <a className="nav-link active" aria-current="page" href="/about">AboutUs</a>
         </li>
         <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="/mydata">Get Data</a>
+        </li>
+        <li className="nav-item">
           <a className="nav-link" href="/contact">Contact Us</a>
         </li>
         

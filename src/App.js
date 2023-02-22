@@ -10,6 +10,7 @@ import Mynavbar from './components/Mynavbar';
 import { useEffect, useState } from 'react';
 import Aboutus from './components/Aboutus';
 import Contactus from './components/Contactus';
+import TechData from './components/TechData';
 
 function App() {
   // let username = sessionStorage.username;
@@ -28,12 +29,14 @@ function App() {
         return (
           <BrowserRouter>
             <div className="App">
+              
                   <Routes>   
                     <Route path="/" element={<><Mynavbar/><Login/> </>} />             
                     <Route path="/admin" element={<> <MyDashNavbar/> <DashboardAdmin/> </> } />
                     <Route path="/user" element={<> <MyDashNavbar/> <DashboardUser/> </>} />
                     <Route path="/about" element={<> <MyDashNavbar/> <Aboutus/> </>} />
                     <Route path="/contact" element={<> <MyDashNavbar/> <Contactus/> </>} />
+                    <Route path="/mydata" element={<> <MyDashNavbar/> <TechData/> </>} />
                   </Routes>  
             </div>      
           </BrowserRouter>
