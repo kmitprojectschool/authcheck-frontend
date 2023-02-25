@@ -6,7 +6,8 @@ const TechData =  () => {
     const [newData,setNewData] = useState([]);
 
     const fun = async () => {
-        const res = await axios.get("http://localhost:5000/user/tech");
+        // const res = await axios.get("http://localhost:5000/user/tech");
+        const res = await axios.get("https://mw-six.vercel.app/user/tech");
         console.log("status is "+res.status)
         if (res.status === 200) {         
           console.log(res.data.techdetails);

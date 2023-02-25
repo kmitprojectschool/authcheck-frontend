@@ -18,7 +18,8 @@ const AuthProvider = ({ children }) => {
     const isAuth = async () => {
       try {
         const res = await fetch.get(
-          'http://localhost:5000/api/logged-user/',
+          // 'http://localhost:5000/api/logged-user/',
+          'https://mw-six.vercel.app/api/logged-user/',
           { withCredentials: true }
         );      
         setUser(res.data);
